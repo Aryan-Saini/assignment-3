@@ -15,24 +15,7 @@
   void setup(){
   size(1000,1000);
   smooth();
-  ellipse(eli1X+300,tY+300,wH,wH);
-  fill(0);
-  triangle(500,tY,500,tY2,545,tY2);
-  fill(199,19,1/9);
-  triangle(300,tY,300,tY2,345,tY2);
-  fill(100,200,100);
-  ellipse(eli1X+777,tY+400,wH,wH);
-  fill(255,150,0);
-  ellipse(eli1X,tY+200,wH,wH);
-  fill(0,255,0);
-  rect(rectMov1,tY+600,wH,wH);
-  fill(0,200,0);
-  rect(rectMov1+100,tY+100,wH,wH);
-  fill(0,200,255);
-  eli1Y += 7;
-  rectMov += 9;
-  tY += 3;
-  tY2 += 3;
+
 }
 // confeti 
 void draw(){
@@ -53,13 +36,14 @@ void draw(){
   rect(rectMov1+100,recM,wH,wH);
   fill(0,200,255);
   rect(rectMov1+100,recM,wH,wH);
+  // making the particles move
   eli1Y += 7;
   rectMov += 9;
   tY += 3;
  
   tY2 += 3;
   recM += 5;
-  
+  // reseting the particles
   if (recM > 1000){
   
     recM = 0;
@@ -75,12 +59,10 @@ void draw(){
   fill(225,0,0,c);
   text("This Is A Blast !",250,750);
 }
-// counter
+// click counter
 void mouseClicked(){
   a += 1;
   b += 2;
   c += 10;
  
 }
-
-  
